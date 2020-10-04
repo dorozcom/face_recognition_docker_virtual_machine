@@ -12,3 +12,13 @@ $ xhost +
 ```
 docker run -e DISPLAY=$DISPLAY --env QT_X11_NO_MITSHM=1 --volume=/tmp/.X11-unix:/tmp/.X11-unix:rw --volume /home/dockerusr/images:/root/images --device /dev/video0:/dev/video0 -it facerec:1.1 /bin/bash
 ```
+Fixes issues like:
+```
+Error: BadDrawable (invalid Pixmap or Window parameter) 9 Major opcode: 62 (X_CopyArea)
+```
+```
+No protocol specified : cannot connect to X server :0 
+```
+```
+[WARN:0] global /io/opencv/modules/videoio/src/cap_v4l.cpp (802) open VIDEOIO ERROR: V4L: can't open camera by index 0
+```
