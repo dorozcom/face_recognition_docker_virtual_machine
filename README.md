@@ -3,7 +3,9 @@ This is based on ageitgey/face_recognition with modifications to run as a contai
 The following commands are necessary so that you can run the live webcam samples and get the output when running this container from within a virtual machine
 You have to make sure you virtual machine is able to see the camera device (please see lsusb). 
 
-## Make sure that on your host, before running the container you execute: 
+When you fork ageitgey/face_recognition just update the Dockerfile in there with the one in this repository.
+
+## Make sure that on your host, before running the container you should execute: 
 ```
 $ xhost +
 ```
